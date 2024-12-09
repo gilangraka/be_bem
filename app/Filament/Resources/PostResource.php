@@ -55,6 +55,7 @@ class PostResource extends Resource
                     ->required(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
+                    ->directory('uploads/posts')
                     ->required(),
                 TinyEditor::make('content')
                     ->required()

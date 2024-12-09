@@ -31,6 +31,7 @@ class DivisionMemberResource extends Resource
             ->schema([
                 Forms\Components\FileUpload::make('image')
                     ->image()
+                    ->directory('uploads/division_members')
                     ->required(),
                 Forms\Components\TextInput::make('name')
                     ->required()
